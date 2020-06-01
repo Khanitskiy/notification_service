@@ -8,8 +8,11 @@
 
 ### 1. Выполнить
 `git pull git@github.com:Khanitskiy/notification_service.git`
+
 `cd notification_service`
+
 `bundle install`
+
 `cp /config/database.example.yml /config/database.yml`
 
 ### 2. Прописать 
@@ -32,6 +35,7 @@
 ##### Создание 2 уведомления (Пример)
 
 `Notification.create(notification_type: "confirm", text: "Hello %first_name% %last_name% with email - %email and phone - %phone%")`
+
 `Notification.create(notification_type: "notice", text: "Notice %first_name% %last_name% with email - %email and phone - %phone%")`
 
 ###### Отправка email-a пользователю
