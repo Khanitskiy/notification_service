@@ -7,13 +7,13 @@
 Установливается как стандартное rails app
 
 ### 1. Выполнить
-`git pull git@github.com:Khanitskiy/notification_service.git`
+`git clone https://github.com/Khanitskiy/notification_service.git`
 
 `cd notification_service`
 
 `bundle install`
 
-`cp /config/database.example.yml /config/database.yml`
+`cp config/database.example.yml config/database.yml`
 
 ### 2. Прописать 
 в /config/database.yml логин пароль и название базы данных для подключения к базе

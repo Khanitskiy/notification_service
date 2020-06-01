@@ -15,8 +15,8 @@ class NotificationCreator
   end
 
   def send_email()
-    result = NotificationMailer.send_email(@user, @text, @notification_type).deliver
-    puts result
+    NotificationMailer.send_email(@user, @text, @notification_type).deliver
+    puts "Email was send \nemail: #{@user.email} \ntext: #{@message}"
   end
 
   def send_sms()
