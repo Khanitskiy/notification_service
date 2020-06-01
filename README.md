@@ -34,9 +34,9 @@
 
 ##### Создание 2 уведомления (Пример)
 
-`Notification.create(notification_type: "confirm", text: "Hello %first_name% %last_name% with email - %email and phone - %phone%")`
+`Notification.create(notification_type: "confirm", text: "Hello %first_name% %last_name% with email - %email% and phone - %phone%")`
 
-`Notification.create(notification_type: "notice", text: "Notice %first_name% %last_name% with email - %email and phone - %phone%")`
+`Notification.create(notification_type: "notice", text: "Notice %first_name% %last_name% with email - %email% and phone - %phone%")`
 
 ###### Отправка email-a пользователю
 
