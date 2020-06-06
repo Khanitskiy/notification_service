@@ -1,5 +1,4 @@
 class TwilioMessenger
-  attr_reader :message, :user
 
   def initialize(user, message)
     @message = message

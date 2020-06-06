@@ -1,5 +1,4 @@
 class TurboSmsMessenger
-  attr_reader :message, :user
 
   def initialize(user, message)
     @message = message
