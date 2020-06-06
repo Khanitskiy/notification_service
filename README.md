@@ -1,5 +1,5 @@
-# README
 
+# README
 
 
 ## УСТАНОВКА
@@ -18,6 +18,8 @@
 ### 2. Прописать 
 в /config/database.yml логин пароль и название базы данных для подключения к базе
 Положить в корень проекта .env
+
+Добавить `Bundler.require(*Rails.groups)` в config/application.rb
 
 ### 3. Установка базы - выполнить
 `rake db:create`
@@ -51,6 +53,6 @@
 - берем пользователя по phone
 	`user = User.find_by(phone: "380664856394")`
 - отправляем sms с уведомлением типа "confirm"
-	`NotificationCreator.new.confirm.to_user(user).send_email`
+	`NotificationCreator.new.confirm.to_user(user).send_sms`
 - отправляем sms с уведомлением типа "notice"
-	`NotificationCreator.new.confirm.to_user(user).send_email`	
+	`NotificationCreator.new.confirm.to_user(user).send_sms`	
